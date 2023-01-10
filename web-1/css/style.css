@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    padding: 0 15px;
+}
+.row>*{
+    width: 100%;
+    padding: 0 15px;
+}
+
+.justify-end{
+    justify-content: end !important;
+}
+.aline-center{
+    align-items: center !important;
+}
+.text-center{
+    text-align: center !important;
+}
+.text-end{
+    text-align: end !important;
+}
+.wow-bg{
+    background: linear-gradient(rgba(0, 0, 0, 0.704),rgba(0, 0, 0, 0.743)),url(../image/wow-bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    padding: 250px 0;
+}
+.name-sec{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+#header{
+ position: fixed;
+ top: 0;
+ right: 0;
+ width: 100%;
+ background: transparent;
+}
+.wow-icon a{
+    background: rgba(172, 255, 47, 0.101);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: rgb(208, 241, 21);
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-left: 8px;
+    margin-right: 8px;  
+    transition: all 0.5s ease;   
+}
+.wow-icon a:hover{
+    background-color: transparent;
+    color: #fff;
+    transform: scale(1.1);
+}
+.main-img{
+    position: relative;
+    overflow: hidden;
+    transition: all .2s ease;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 25px;
+    /* max-height: 300px; */
+    box-shadow: 0 0 6px #ccc;
+}
+.gallery{
+    padding: 60px 0;
+    background-color: #000;
+}
+h4{
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.wow-img img{
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+}
+.main-img:hover .wow-img img{
+    transform: scale(1.2);
+    
+}
+.main-img:hover{
+    border: 1px solid #f5c608;
+}
+.main-img .img-blk{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.171); 
+    opacity: 0;
+}
+.main-img .img-blk h5{
+    font-size: 20px;
+    position: absolute;
+    bottom: 103px;
+    transform: translateY(0px);
+    color: #ffffffd6;
+    left: 10px;
+}
+.main-img:hover .img-blk{
+    opacity: 1;
+}
+.main-img:hover h5{
+    transform: translateY(-10px);
+}
